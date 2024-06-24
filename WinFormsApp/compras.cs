@@ -20,7 +20,7 @@ namespace GestionStock
         private int _currentPageIndex;
         private int _pageSize;
         private ListaPaginada<Compra> _currentPage;
-        //private DataTable tabla;
+        
 
         public compras(ICompraRepository compraRepository)
         {
@@ -67,13 +67,7 @@ namespace GestionStock
                 DisplayIndex = 3
             });
 
-            // tabla = new DataTable();
-            // //tabla.Columns.Add("CompraId");
-            // tabla.Columns.Add("Fecha");
-            // tabla.Columns.Add("Producto");
-            // tabla.Columns.Add("Cantidad");
-            //// tabla.Columns.Add("Usuario");
-            // dataGridView1.DataSource = tabla;
+          
         }
         private void Consultar(int pageIndex)
         {

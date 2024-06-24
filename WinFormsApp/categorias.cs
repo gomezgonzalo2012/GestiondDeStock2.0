@@ -33,13 +33,7 @@ namespace GestionStock
                 Name = "Categoria",
                 DisplayIndex = 0
             });
-            //dataGridView1.Columns.Add(new DataGridViewTextBoxColumn()
-            //{
-            //    HeaderText = "Habilitado",
-            //    DataPropertyName = "CategoriaId",
-            //    Name = "Habilitado",
-            //    DisplayIndex = 1
-            //});
+            
         }
 
 
@@ -59,25 +53,10 @@ namespace GestionStock
             dataGridView1.DataSource = _paginador;
 
 
-
             // Actualiza los botones y la etiqueta de la página
             btnAtras.Enabled = _paginador.HasPreviousPage;
             btnSiguiente.Enabled = _paginador.HasNextPage;
             labelPagina.Text = $"Página {_pageIndex} de {_paginador.TotalPages}";
-
-
-            //IEnumerable<Categoria> lista = _categoriaRepository.GetAll();
-
-
-            //foreach (Categoria item in lista)
-            //{
-
-            //    DataRow row = tabla.NewRow();
-            //    row["Categoria"] = item.Nombre;
-            //    row["Habilitado"] = item.CategoriaId;
-
-
-            //    tabla.Rows.Add(row);
 
         }
 

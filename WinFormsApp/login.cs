@@ -81,18 +81,6 @@ namespace GestionStock
         }
     }
 
-
-        //private bool Autenticar(string usuario, string contrase�a)
-        //{
-        //    var user = _usuarioRepository.GetUsuarioByNombre(usuario);
-
-        //    if (user == null)
-        //        return false;
-
-        //    var hashedPassword = _passwordHasher.GenerateHashPassword(contrase�a, user.Salt);
-
-        //    return hashedPassword.SequenceEqual(user.Hash);
-        //}
     }
 
 

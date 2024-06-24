@@ -25,10 +25,6 @@ namespace GestionStock
 
         public Categoria CategoriaA;
 
-        //public string Producto { get; private set; }
-        //public string Categoria { get; private set; }
-        //public int Stock { get; private set; }
-
         public agregar(IProductoBusiness productoBusiness, ICategoriaBusiness categoriaBusiness)
         {
             InitializeComponent();
@@ -41,11 +37,6 @@ namespace GestionStock
         {
             CategoriaA = categoria;
             Iniciar();
-
-            //if (IsHandleCreated)
-            //{
-
-            //}
 
         }
         private void Form7_Load(object sender, EventArgs e)
@@ -69,8 +60,6 @@ namespace GestionStock
             {
                 labelCategoria.Text = "Categoría no seleccionada";
             }
-            
-
 
         }
 
@@ -82,16 +71,12 @@ namespace GestionStock
                 return;
             }
 
-            //if (!decimal.TryParse(txtPrecio.Text, out decimal precio))
-            //{
-            //    MessageBox.Show("Por favor, introduce un precio válido.");
-            //    return;
-            //}
+           
 
             GestionDeStock.Producto producto = new GestionDeStock.Producto
             {
                 Nombre = txtProducto.Text,
-                CategoriaId = CategoriaA.CategoriaId, // Asumiendo que tienes una propiedad CategoriaId
+                CategoriaId = CategoriaA.CategoriaId, 
                 Precio = Convert.ToDecimal(txtPrecio.Text),
                 Habilitado = checbHabilitado.Checked
             };
@@ -106,25 +91,6 @@ namespace GestionStock
             DialogResult = DialogResult.OK;
             this.Close();
 
-
-
-
-
-
-            //GestionDeStock.Producto producto = new GestionDeStock.Producto
-            //{
-            //    Nombre = txtProducto.Text,
-            //    Categoria = (Categoria)cbCategoria.SelectedValue,
-            //    Precio = decimal.Parse(txtPrecio.Text),
-            //    Habilitado = checbHabilitado.Checked
-            //};
-
-            //_productoBusiness.AddProducto(producto);
-
-
-
-            //DialogResult = DialogResult.OK;
-            //Close();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

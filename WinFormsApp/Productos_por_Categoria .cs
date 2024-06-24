@@ -28,8 +28,6 @@ namespace GestionStock
 
 
 
-        //IProductoRepository _producto;
-        // ICategoriaRepository _repository;
         public Productos_por_Categoria(IProductoBusiness productoBusiness, IStockBusiness stockBusiness, ICategoriaBusiness categoriaBusiness)
         {
             InitializeComponent();
@@ -96,13 +94,7 @@ namespace GestionStock
 
             btnAtras.Click += btnAtras_Click;
             btnSiguiente.Click += btnSiguiente_Click;
-            //tabla = new DataTable();
-            //tabla.Columns.Add("Producto");
-            //tabla.Columns.Add("Categoria");
-            //tabla.Columns.Add("Precio");
-            //tabla.Columns.Add("Stock");
-            //tabla.Columns.Add("Habilitado");
-            //dataGridView1.DataSource = tabla;
+            
         }
 
         private void Consultar(int pageIndex)
@@ -145,30 +137,6 @@ namespace GestionStock
         }
 
 
-        //label2.Text = CategoriaActual.Nombre; // se utiliza la categoria como aatributo
-        ////IEnumerable<Producto> lista = _productoBusiness.GetAllProductos();  
-        //if (CategoriaActual.Productos is null)
-        //{
-        //    MessageBox.Show("No hay productos en esta Categoria");
-
-
-
-        //}
-        //IEnumerable<Producto> lista = CategoriaActual.Productos;
-
-
-        //foreach (Producto item in lista)
-        //{
-        //    DataRow row = tabla.NewRow();
-        //    row["Producto"] = item.Nombre;
-        //    row["Categoria"] = this.CategoriaActual.Nombre;
-        //    row["Stock"] = _stockBusiness.ObtenerStockDeProducto(item.ProductoId); // stock
-        //                                                                           // row["Precio"] = item.Precio;
-        //    row["Habilitado"] = item.Habilitado;
-
-        //    tabla.Rows.Add(row);
-
-
 
 
 
@@ -182,18 +150,9 @@ namespace GestionStock
                 if (formAgregar.ShowDialog() == DialogResult.OK)
                 {
                     Consultar(_currentPageIndex);
-                    //DataRow row = tabla.NewRow();
-                    //row["Producto"] = agregar.Producto;
-                    //row["Categoria"] = agregar.Categoria;
-                    //row["Stock"] = agregar.Stock;
-
-                    //tabla.Rows.Add (row);
-
 
                 }
-                //Form7 form7 = Program.ServiceProvider.GetRequiredService<Form7>();
-
-                //form7.Show();
+                
 
             }
 

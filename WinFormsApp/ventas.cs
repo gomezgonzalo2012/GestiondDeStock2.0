@@ -66,32 +66,8 @@ namespace GestionStock
                 DisplayIndex = 3
             });
 
-            //// Agrega botones para navegación de páginas
-            //var btnPrevious = new Button
-            //{
-            //    Text = "<Anterior",
-            //    Location = new System.Drawing.Point(10, 370)
-            //};
-            //btnPrevious.Click += btnAnterior_Click;
-
-            //var btnNext = new Button
-            //{
-            //    Text = "Siguiente>",
-            //    Location = new System.Drawing.Point(100, 370)
-            //};
-            //btnNext.Click += btnAnterior_Click;
-
-            //Controls.Add(btnNext);
-            //Controls.Add(btnPrevious);
-
-
-
-            //tabla = new DataTable();
-            //tabla.Columns.Add("Fecha");
-            //tabla.Columns.Add("Producto");
-            //tabla.Columns.Add("Cantidad");
-            //tabla.Columns.Add("Usuario");
-            //dataGridView1.DataSource = tabla;
+            
+            
         }
         private void Consultar(int pageIndex)
         {
@@ -111,13 +87,7 @@ namespace GestionStock
                 Cantidad = item.Cantidad,
                 Usuario = item?.Usuario.Nombre
             }).ToList();
-            //var ventas = lista.Select(item => new
-            //{
-            //    Fecha = item.Fecha,
-            //    Producto = item.Producto.Nombre,
-            //    Cantidad = item.Cantidad,
-            //    Usuario = item.UsuarioId
-            //}).ToList();
+           
 
             dataGridView1.DataSource = ventas;
         }
