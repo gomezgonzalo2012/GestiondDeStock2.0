@@ -35,7 +35,7 @@ namespace GestionStock
             _stockBusiness = stockBusiness;
             _categoriaBusiness = categoriaBusiness;
             _currentPageIndex = 1;
-            _pageSize = 7;
+            _pageSize = 5;
             Iniciar();
             //_repository = repository;
             //_producto = producto;

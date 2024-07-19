@@ -14,6 +14,7 @@ using GestionDeStock.Business.Implements;
 
 
 
+
 namespace GestionStock
 {
     public partial class agregar : Form

@@ -44,7 +44,11 @@ namespace GestionDeStock.Business.Implements
                 {
                     _productoRepository.DeshabilitarProducto(producto);
                 }
-                _productoRepository.HabilitarProducto(producto);
+                else
+                {
+                    _productoRepository.HabilitarProducto(producto);
+                }
+                
 
             }
         }

@@ -28,7 +28,7 @@ namespace GestionStock
 
             _compraRepository = compraRepository;
             _currentPageIndex = 1;
-            _pageSize = 2;
+            _pageSize = 4;
             Iniciar();
             Consultar(_currentPageIndex);
 

@@ -28,7 +28,7 @@ namespace GestionStock
             InitializeComponent();
             _ventaRepository = ventaRepository;
             _currentPageIndex = 1;
-            _pageSize = 2;
+            _pageSize = 5;
             Iniciar();
             Consultar(_currentPageIndex);
         }
